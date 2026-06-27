@@ -1,0 +1,51 @@
+                       PROJECT-1
+                        REPORT
+       AWS VPC AND EC2 INSTANCE SETUP REPORT
+    1.VPC Creation
+      .Logged in to Aws console
+      .Opened the vpc service 
+      .Created a new vpc using "vpc and more"
+      .configured public and private subnets
+      .created the vpc successfully
+    2.EC2 Instance Creation
+      .Opened the ec2 service
+      .Launched a new ubuntu instance
+      .Created a key pair
+      .Selected the custom vpc
+      .Chose a public subnet 
+      .Enabled auto assign public ip
+      .Created a security group
+      .Launched the ec2 instance
+    3.Connecting to ec2
+      .Opened mobaxterm
+      .Connected to the ec2 instance using ssh
+      .Used the public ip address and pem key file
+      .Logged in successfully as the ubuntu user
+    4.Installing python
+      .Commands used
+      .sudo apt update
+      .Visit python
+      .Choose your operating system
+      .Check "Add python.exe to PATH" on Windows
+      .Click "Install Now" to complete setup
+      .Open your terminal or command prompt
+      .Type python --version to coniform succes
+    5.Running python web server 
+      command used:python3-m http.server8000
+      open the browser and access:htt:/ec2-public-ip:8000
+     .Security Testing 
+       .security group was configured to llw port8000.
+       .NACL rules were tested to control network traffic
+       .When traffic was blocked in NACL,the web server became    
+           inaccessible
+    Results
+       The vpc was sucfully created and an EC2 instance was  
+       lanched .python was installed on the EC2 instance,and aweb        
+       server was successfully accessed through the browser using              
+       the public IP address.
+   Conclusion
+       This project helped in understanding aws networking concepts         
+       such as vpc,subnets,security groups,NACL,and EC2 instance                                                                                                                                                                                                          
+       management it also demonstrited hosting a simple python web                                                                                  application on aws
+     
+      
